@@ -15,13 +15,18 @@
             {{/unless}}
             {{/each}}
         </div>
-
-        
-
-
-
-
-
-
+        <div class = "col" id="burger-img">
+            <img>
+        </div>
+        <div class="col" id="list-devoured">
+            <h2 class="burger-title text-center">Burgers Devoured</h2>
+            {{#each burgers}}
+            {{#if this.devoured}}
+            <div class="devoured-burgers">
+                {{this.burger_name}}
+            </div>
+            {{/if}}
+            {{/each}}
+        </div>
     </div>
 </div>
