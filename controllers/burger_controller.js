@@ -8,7 +8,6 @@ router.get("/", function (req,res){
     })  
 })
 
-
 router.post("/burger", function (req,res){
     burger.insertOne(
     [
