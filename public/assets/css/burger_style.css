@@ -1,0 +1,19 @@
+
+body {
+    font-family: 'Permanent Marker', sans-serif;
+    background-color: rgb(22, 255, 72);
+}
+
+.title {
+    font-family: 'Reggae One', normal;
+    font-size: 60px;
+    color: #000000;
+    padding: 20px;
+}
+
+.burger-title {
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
