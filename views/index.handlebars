@@ -2,7 +2,21 @@
 
 <div class="container">
     <div class="row">
+        <div class="col" id="list-burgers">
+            <h2 class="burger-title text-center">Burgers Available</h2>
+            {{#each burgers}}
+            {{#unless this.devoured}}
+            <div class="available-burgers">
+                <form action="/burgers/{{this.id}}?_method=PUT" method="POST" class="update-button">
+                    {{this.burger_name}}
+                    <button type="submit" class="btn- btn-default" id="burger-ready">DEVOUR IT</button>
+                </form>
+            </div>
+            {{/unless}}
+            {{/each}}
+        </div>
 
+        
 
 
 
