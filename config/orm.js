@@ -1,4 +1,4 @@
-const connection = require('./connection.js');
+const connection = require('./connection');
 
 function printQuestionMarks(num) {
     var arr = [];
@@ -10,19 +10,16 @@ function printQuestionMarks(num) {
 
 function objToSql(obj){
     var arr = [];
-
     for (var key in obj){
-        var cvalue = obj[key];
+        var value = obj[key];
         if(Object.hasOwnProperty.call(obj, key)){
             if(typeof value === "string" && value.indexOf(" ") >= 0){
                 value = "'" + value + "'";
             }
             return arr.toString();
         }
-    
     }
 }
-
 
 const orms = {
     selectAll: function (tableInput, cb) {
@@ -45,7 +42,6 @@ const orms = {
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
 
-        // testing
         console.log(queryString);
 
         connection.query(queryString, vals, function (err, result) {
@@ -70,16 +66,12 @@ const orms = {
             if (err) {
                 throw err;
             }
-
             cb(result);
         });
-    
     },
 
     deleteOne:{
-
     }
-
 }
 
 module.exports = orms;
