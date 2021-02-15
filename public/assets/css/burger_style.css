@@ -50,5 +50,41 @@ body {
     padding: 3px;
 }
 
+#burger-ready {
+    float: right;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: #000099;
+}
 
+#add-burger{
+    margin: 0 auto; 
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+#enter-burger {
+    font-size: 25px;
+    width: 200px;
+    height: 50px;
+    align-content: center;
+    color: #000000;
+    background-color: #ff0000;   
+}
+
+#submit-burger {
+    font-size: 20px;
+    height: 40px;
+    margin: 0 auto; 
+    width: 200px;
+    padding: 10px;
+    color: #000000;
+    background-color: #000099;
+}
+
+#img {
+    width: 300px;
+    height: auto;
+}
 
