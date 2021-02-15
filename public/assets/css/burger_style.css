@@ -17,3 +17,38 @@ body {
     margin-bottom: 20px;
 }
 
+.container {
+    padding: 10px;
+}
+
+#list-devoured {
+    margin: 10px;
+    height: 300px;
+    overflow: auto;
+    background-color: #000099;
+}
+
+#list-burgers {
+    margin: 10px;
+    height: 300px;
+    overflow: auto;
+    background-color: #ff0000;
+}
+
+.available-burgers {
+    overflow: hidden;
+    font-size: 20px;
+    margin: 8px;
+    border: 2px solid #000099;
+    padding: 3px;
+}
+
+.devoured-burgers {
+    font-size: 20px;
+    margin: 8px;
+    border: 2px solid #ff0000;
+    padding: 3px;
+}
+
+
+
