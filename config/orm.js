@@ -21,14 +21,14 @@ function objToSql(obj){
     }
 }
 
-const orms = {
+var orms = {
     selectAll: function (tableInput, cb) {
-            var queryString = "SELECT * FROM " + tableInput + ";";
-            connection.query(queryString, function (err, result) {
-                if (err) {
-                    throw err;
-                }
-            cb(result);
+        var queryString = "SELECT * FROM " + tableInput + ";";
+        connection.query(queryString, function (err, result) {
+            if (err) {
+                throw err;
+            }
+        cb(result);
         });
     },
 
@@ -69,9 +69,6 @@ const orms = {
             cb(result);
         });
     },
-
-    deleteOne:{
-    }
 }
 
 module.exports = orms;
