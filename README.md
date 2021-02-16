@@ -26,7 +26,7 @@ You can find the live application here:
 
 ## Picture of Application
 
-![](img/Burger-Plz-Demo.png)
+![](public/assets/img/Burger-Plz-Demo.png)
 
 ---------------------------	
 
