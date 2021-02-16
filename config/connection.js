@@ -1,10 +1,12 @@
+require('dotenv').config();
+
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
-  password: '',
+  password: process.env.password,
   database: 'burgers_db',
 });
 
@@ -14,6 +16,6 @@ connection.connect((err) => {
       return;
     }
     console.log(`connected as id ${connection.threadId}`);
-  });
+});
 
-  module.exports = connection;
+module.exports = connection;
